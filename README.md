@@ -12,7 +12,7 @@ the following to your `project.clj` file:
     :plugins [[lein-protobuf "0.1.1"]]
 
 Be sure to replace `"0.6.0"` and `"0.1.1"` with the latest versions listed at
-http://clojars.org/protobuf and http://clojars.org/lein-protobuf.
+https://clojars.org/org.flatland/protobuf and http://clojars.org/lein-protobuf.
 
 *Note: lein-protobuf requires at least version 2.0 of Leiningen.*
 
