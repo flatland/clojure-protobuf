@@ -1,4 +1,4 @@
-(defproject org.flatland/protobuf "0.8.2"
+(defproject org.flatland/protobuf "0.8.3"
   :description "Clojure-protobuf provides a clojure interface to Google's protocol buffers."
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -8,7 +8,7 @@
                  [org.flatland/schematic "0.1.0"]
                  [org.flatland/io "0.3.0"]
                  [ordered-collections "0.4.0"]]
-  :plugins [[lein-protobuf "0.4.2"]]
+  :plugins [[lein-protobuf "0.4.3"]]
   :aliases {"testall" ["with-profile" "dev,default:dev,1.3,default:dev,1.5,default" "test"]}
   :profiles {:1.3 {:dependencies [[org.clojure/clojure "1.3.0"]]}
              :1.5 {:dependencies [[org.clojure/clojure "1.5.0-master-SNAPSHOT"]]}
@@ -17,4 +17,5 @@
                                        :snapshots true
                                        :releases {:checksum :fail :update :always}}}
   :checksum-deps true
+  :javac-options ["-target" "1.6" "-source" "1.6"]
   :java-source-paths ["src"])
